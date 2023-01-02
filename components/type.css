@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---SECTION BREAK--- */
+
+fieldset {
+  width: 80% !important;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: rgb(95, 92, 79);
+  box-sizing: border-box;
+  grid-area: 1 / 1;
+  padding: 0;
+  width: inherit;
+}
+legend {
+  font: 15pt/0 "Averia Serif Libre";
+  margin: auto;
+  padding: 0 4px;
+}
+fieldset i {
+  margin: 5vw 1vw 5vw 1vw;
+  color: rgb(95, 92, 79);
+}
+
+/* ---HEADER--- */
+
+header {
+  width: 100%;
+  height: auto;
+}
+.header {
+  width: 100%;
+  height: 50vw;
+  background-size: cover;
+  background-image: url(../images/background-interior.jpg);
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.header-title {
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size: 4vw;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+.page-title {
+  width: fit-content;
+  margin: 5vw auto 5vw auto;
+  font-size: 3vw;
+  color: #3d3b37;
+  border-bottom: 2px solid rgb(95, 92, 79);
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ---CONTAINER 1--- */
+
+.container-1 {
+  width: auto;
+  height: auto;
+  padding: 2vw;
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "img-1 img-1 img-1 img-1 img-1" "title-1 title-1 denah-1 denah-1 type-1";
+  row-gap: 2vw;
+}
+.img-1-1 {
+  grid-area: img-1;
+}
+.title-teks-1-1 {
+  width: auto;
+  height: auto;
+  grid-area: title-1;
+}
+.title-teks-1-1 h2 {
+  width: 100%;
+  font-size: 3vw;
+  color: rgb(135, 118, 48);
+  line-height: 3.8vw;
+  font-weight: 100;
+  margin: 0 0 2vw 0;
+}
+.title-teks-1-1 p {
+  width: 60%;
+  margin: 0 0 0 11vw;
+  text-align: justify;
+  line-height: 2vw;
+  font-size: 1.2vw;
+}
+.img-1-2 {
+  grid-area: denah-1;
+}
+.type-1-1 {
+  grid-area: type-1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.type-1-1 h1 {
+  width: 60%;
+  margin: 0 auto 0 auto;
+  padding: 0 0 1vw 0;
+}
+.type-1-1 h4 {
+  width: 60%;
+  margin: 0 auto 0 auto;
+  padding: 1vw 0 1vw 0;
+  border-top: 2px solid rgb(135, 118, 48);
+}
+.type-1-1 img {
+  width: 50%;
+
+  margin: 1vw auto 0 auto;
+}
+
+/* ---CONTAINER 2--- */
+
+.container-2 {
+  width: auto;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0;
+  background-color: rgb(188, 194, 181);
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "img-2 img-2 img-2" "denah-2 denah-2 type-2";
+  row-gap: 3vw;
+}
+
+.img-2-1 {
+  grid-area: img-2;
+  margin: 0 0 -0.5vw 0;
+  padding: 2vw;
+}
+.img-2-2 {
+  grid-area: denah-2;
+  padding: 5vw;
+}
+.type-2 {
+  grid-area: type-2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3vw 0 0 2vw;
+}
+.type-2 h1 {
+  width: 40%;
+
+  padding: 0 0 1vw 0;
+}
+.type-2 h4 {
+  width: 35%;
+  padding: 1vw 0 1vw 0;
+  border-top: 2px solid rgb(135, 118, 48);
+}
+.type-2 img {
+  width: 70%;
+  margin: 2vw 0 0 0;
+}
+
+/* ---CONTAINER 3--- */
+
+.container-3 {
+  width: auto;
+  height: auto;
+  margin: 0 0 0 0;
+  padding: 0;
+  background-color: rgb(213, 221, 205);
+  display: grid;
+  grid-template-rows: 1fr, auto;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas: "denah-3 denah-3 type-3 type-3 forest" "img-3-1 img-3-1 img-3-1 img-3-1 img-3-3";
+}
+.img-3-1 {
+  grid-area: img-3-1;
+}
+.img-3-2 {
+  grid-area: denah-3;
+  padding: 2vw;
+}
+.type-3 {
+  grid-area: type-3;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 0 0 5vw;
+}
+.type-3 h1,
+h4,
+p {
+  padding: 1vw 0 1vw 0;
+}
+.type-3 h1 {
+  width: 40%;
+}
+.type-3 h4 {
+  border-top: 2px solid rgb(135, 118, 48);
+  width: 25%;
+}
+.type-3 p {
+  width: 70%;
+  text-align: justify;
+  line-height: 1.8vw;
+}
+.img-3-3 {
+  grid-area: forest;
+}
+
+/* ---CONTAINER 4--- */
+
+.container-4 {
+  width: auto;
+  height: auto;
+  display: block;
+}
+.title-4-1 {
+  text-align: center;
+  margin: 0;
+}
+.fasilitas {
+  width: auto;
+  height: auto;
+  margin: 5vw 0;
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "gate-img gate-teks" " masjid-teks masjid-img" "jalan-img jalan-teks" "taman-teks taman-img " "security-img security-teks";
+}
+.fasilitas div {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  background-color: rgb(210, 210, 210);
+}
+.fasilitas p {
+  width: 70%;
+  color: rgb(66, 55, 12);
+  font-size: 1.5vw;
+}
+.fasilitas-1-1 {
+  grid-area: gate-img;
+}
+.fasilitas-1-2 {
+  grid-area: gate-teks;
+}
+.fasilitas-2-1 {
+  grid-area: masjid-img;
+}
+.fasilitas-2-2 {
+  grid-area: masjid-teks;
+}
+.fasilitas-3-1 {
+  grid-area: jalan-img;
+}
+.fasilitas-3-2 {
+  grid-area: jalan-teks;
+}
+.fasilitas-4-1 {
+  grid-area: taman-img;
+}
+.fasilitas-4-2 {
+  grid-area: taman-teks;
+}
+.fasilitas-5-1 {
+  grid-area: security-img;
+}
+.fasilitas-5-2 {
+  grid-area: security-teks;
+}
+
+/* ---RESPONSIVE MOBILE--- */
+
+@media (max-width: 765px) {
+  /* ---CONTAINER 1--- */
+
+  .container-1 {
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "img-1 img-1 " "title-1 denah-1" "type-1 type-1";
+  }
+  .type-1-1 {
+    flex-direction: row;
+    margin: -5vw 3vw 0 3vw;
+  }
+  .type-1-1 h1 {
+    font-size: 4vw;
+    margin: 0 3vw;
+  }
+  .type-1-1 h4 {
+    width: 100%;
+    padding: 0 5vw;
+    border: none;
+    margin: auto 0 auto 8vw;
+    font-size: 3vw;
+    border-left: 2px solid rgb(135, 118, 48);
+  }
+  .type-1-1 img {
+    display: none;
+  }
+
+  /* ---CONTAINER 2--- */
+
+  .type-2 {
+    margin: 2vw 0 0 3vw;
+    padding: 0;
+  }
+  .type-2 h1 {
+    font-size: 5vw;
+    margin: 0 0 2vw 0;
+  }
+  .type-2 h4 {
+    font-size: 3vw;
+    padding: 2vw 0;
+  }
+  .type-2 img {
+    display: none;
+  }
+  .img-2-2 {
+    padding: 0 5vw 5vw 5vw;
+  }
+
+  /* ---CONTAINER 3--- */
+  .container-3 {
+    grid-template-rows: 1fr, 1fr;
+    grid-template-areas: "denah-3 denah-3 denah-3 type-3 type-3" "img-3-1 img-3-1 img-3-1 img-3-1 forest";
+  }
+  .type-3 {
+    margin: 5vw 0 0 4vw;
+  }
+  .type-3 h1 {
+    font-size: 5vw;
+    margin: 0 0 2vw 0;
+  }
+  .type-3 h4 {
+    width: 45%;
+    font-size: 3vw;
+    padding: 2vw 0;
+  }
+  .img-3-4 {
+    display: none;
+  }
+  .img-3-2 {
+    padding: 5vw;
+  }
+  .type-3 p {
+    display: none;
+  }
+  .container-3 h1 {
+    font-size: 5vw;
+  }
+  .container-3 h4 {
+    font-size: 3vw;
+  }
+}

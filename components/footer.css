@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  width: auto;
+  height: auto;
+  padding: 5vw;
+  background-image: url(/images/background-interior.jpg);
+  background-size: cover;
+  background-position-y: center;
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-areas: "left  .  center center center right right";
+}
+footer a {
+  color: white;
+  transition: all 0.3s;
+}
+footer h1 {
+  font-size: 2vw;
+  font-family: "Montserrat", sans-serif;
+}
+footer a:hover {
+  color: rgb(255, 180, 40);
+}
+.footer-left {
+  grid-area: left;
+  display: block;
+  font-size: 0.5vw;
+  margin: auto 0 auto 0;
+  color: white;
+  font-weight: lighter;
+}
+.footer-left img,
+h3 {
+  display: block;
+  margin: 0 auto 0 auto;
+  font-size: 1vw;
+}
+.footer-left div {
+  margin: 0 0 1vw 0;
+}
+.footer-left .left-title {
+  text-align: center;
+  font-family: "Nixie One", cursive;
+  font-weight: 400;
+}
+.footer-center {
+  grid-area: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "left center right";
+}
+.footer-center div {
+  display: flex;
+  flex-direction: column;
+}
+.footer-center h1 {
+  margin: 0 0 1.5vw 0;
+}
+.footer-center a {
+  text-decoration: none;
+  width: fit-content;
+  margin: 0.5vw 0 0.5vw 0;
+}
+
+.center-left {
+  grid-area: left;
+}
+.center-center {
+  grid-area: center;
+}
+.center-right {
+  grid-area: right;
+}
+
+.footer-right {
+  grid-area: right;
+  text-align: center;
+  display: block;
+  margin: auto 0 auto 0;
+}
+
+.footer-right i {
+  font-size: 1.8vw;
+}
+.right-content {
+  margin: 2vw 0 0 0;
+}
+.right-content a {
+  width: fit-content;
+  margin: 0 1vw 0 1vw;
+}
+
+.copyright {
+  width: auto;
+  background-color: rgb(83, 83, 83);
+  font-size: 0.8vw;
+  color: white;
+  text-align: center;
+  padding: 0.5vw;
+  font-family: "Bitter", serif;
+}
+
+/* ---RESPONSIVE MOBILE--- */
+
+@media (max-width: 765px) {
+  footer {
+    width: auto;
+    padding: 3vw;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas: "left left center center center" ". right right right .";
+    row-gap: 5vw;
+  }
+  footer img {
+    width: 40%;
+  }
+  footer h1 {
+    font-size: 2.5vw;
+  }
+  .footer-left h3 {
+    width: 70%;
+    font-size: 1.5vw;
+  }
+  .footer-center h1 {
+    margin-bottom: 3vw;
+  }
+  .footer-center a {
+    font-size: 2vw;
+  }
+  .right-content {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-right i {
+    font-size: 3.5vw;
+  }
+}

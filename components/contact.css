@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ---SECTION BREAK--- */
+
+fieldset {
+  width: 80% !important;
+  margin: auto;
+  border: 2px solid transparent;
+  border-top-color: rgb(95, 92, 79);
+  box-sizing: border-box;
+  grid-area: 1 / 1;
+  padding: 0;
+  width: inherit;
+}
+legend {
+  font: 15pt/0 "Averia Serif Libre";
+  margin: auto;
+  padding: 0 4px;
+}
+fieldset i {
+  margin: 5vw 1vw 5vw 1vw;
+  color: rgb(95, 92, 79);
+}
+
+/* ---HEADER--- */
+
+header {
+  width: 100%;
+  height: auto;
+}
+.header {
+  width: 100%;
+  height: 50vw;
+  background-size: cover;
+  background-image: url(../images/background-interior.jpg);
+  position: relative;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.header-title {
+  width: 100%;
+  position: absolute;
+  color: white;
+  font-size: 4vw;
+}
+
+section {
+  width: 100%;
+  height: auto;
+}
+.page-title {
+  width: fit-content;
+  margin: 5vw auto 5vw auto;
+  font-size: 3vw;
+  color: #3d3b37;
+  border-bottom: 2px solid rgb(95, 92, 79);
+}
+
+.container-1 {
+  position: relative;
+  text-align: center;
+}
+.teks-1-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-2 a {
+  width: fit-content;
+  text-decoration: none;
+}
+.container-2 .whatsapp {
+  width: 10vw;
+  height: 10vw;
+  border: 2px solid salmon;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 5vw;
+  color: black;
+  transition: all 0.3s;
+}
+
+.container-2 .whatsapp:hover {
+  color: orange;
+  scale: 1.1;
+}
